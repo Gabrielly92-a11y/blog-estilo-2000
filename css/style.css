@@ -1,0 +1,63 @@
+:root{
+    --bg: #ffd6ec;
+    --bg2: #fff2fa;
+    --box: #ffffff;
+    --ink: #3a1a4d;
+    --pink: #ff3fa4;
+    --lilac: #9b6bff;
+    /*parte 1 das cores*/
+    --cyan: #23c8e6;
+    --yellow:#fff2fa;
+    --link: #d4006f;
+    --visited: #7a2bd1;
+    /*parte 2 das cores*/
+    /*title,body e mono > monospace*/
+    --f-title: 'Press Start 2P', 'Courrier New', monospace;
+    --f-body: 'Pratick Hand', 'Comic Sans MS', 'Comic Sans', cursive;
+    --f-mono: 'VT323', 'Courier New', monospace;
+    color-scheme: light;
+}
+*{ box-sizing: border-box;}
+body {
+    margin: 0;
+    padding-inline: 16px;
+    padding-block: 16px 40px;
+    background-color: var(--bg);
+    background-image: 
+    radial-gradient(var(--pink) 1.5px, transparent 2px),
+    radial-gradient(var(--lilac) 1.5px, transparent 2px);
+    background-size: 28px 28px;
+    background-position: 0 0,14px 14px;
+    color:  var(--ink);
+    font: 19px/1.35 var(--f-body);
+    
+}
+a {color: var(--link);}
+a:visited
+{color: var(--visited);}
+a:hover
+{
+    background: var(--yellow);
+    color: #000;
+    }
+/*contorno quando navegar:azul*/
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--cyan);
+    outline-offset: 2px;
+}
+
+buttton,select,input,textarea { /*botões*/
+    font: inherit;
+    color: var(--ink);
+}
+
+butoon {
+    background: var(--yellow);
+    border: 2px outset #fff;
+    padding: 2px 12px;
+    cursor: var(--ink);
+}
